@@ -7,6 +7,21 @@ public class Main {
       //  Loan loan=new Loan(10,1000);
       //  System.out.println(loan.toString());
        // System.out.println(customer);
+        RetailCustomer retailCustomer=new RetailCustomer(1,"Arifa", new Loan(100, 5000) {
+            @Override
+            double getCommission() {
+                return 0;
+            }
+        });
+        CorpCustomer corpCustomer=new CorpCustomer(2, "Hasan", new Loan(200,10000) {
+            @Override
+            double getCommission() {
+                return 0;
+            }
+        });
+
+        System.out.println("New commission is --->"+retailCustomer.getCommissionAmount());
+
         System.out.println();
               }
 

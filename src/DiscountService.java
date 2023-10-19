@@ -1,7 +1,7 @@
 public  interface DiscountService {
 
-   void discountForLOan();
-  // void discountForPayment();
+   double discountForLOan();
+   double discountForPayment();
 
 
 

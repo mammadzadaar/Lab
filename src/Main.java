@@ -13,6 +13,7 @@ public class Main {
                 return 0;
             }
         });
+
         CorpCustomer corpCustomer=new CorpCustomer(2, "Hasan", new Loan(200,10000) {
             @Override
             double getCommission() {

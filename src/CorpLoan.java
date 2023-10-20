@@ -6,4 +6,5 @@ public class CorpLoan extends Loan{
     double getCommission(){
         return 1.2;
     };
+
 }

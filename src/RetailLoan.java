@@ -8,6 +8,7 @@ public class RetailLoan extends  Loan{
 
     }
 
+
     double getCommission(){
         return 5;
     };

@@ -5,6 +5,7 @@ public class RetailCustomer extends Customer{
     }
 
 
+
     public RetailCustomer(int id, String name,RetailLoan retailLoan) {
         super(id, name);
         this.retailLoan=retailLoan;

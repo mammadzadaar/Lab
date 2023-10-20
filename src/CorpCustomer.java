@@ -8,6 +8,7 @@ public CorpCustomer(int id, String name) {
         super(id, name, loan);
     }
 
+
     public CorpCustomer(int id) {
         super(id);
     }

@@ -5,6 +5,7 @@ public abstract class Loan {
 
     public Loan() {
 
+
     }
 
     abstract double getCommission();

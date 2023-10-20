@@ -1,5 +1,5 @@
 
-public abstract class Loan {
+public  class Loan {
     int id;
     double amount;
 
@@ -8,7 +8,9 @@ public abstract class Loan {
 
     }
 
-    abstract double getCommission();
+     double getCommission( ){
+         return 0;
+     };
 
     public Loan(int id,double amount)
     {

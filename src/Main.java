@@ -2,28 +2,15 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
+        RetailLoan retailLoan=new RetailLoan(210,2000);
+        RetailCustomer retailCustomer=new RetailCustomer(1,"Arifa",retailLoan);
 
-        //Customer customer=new Customer(10,"Arifa",new Loan(1,1000));
-      //  Loan loan=new Loan(10,1000);
-      //  System.out.println(loan.toString());
-       // System.out.println(customer);
-        RetailCustomer retailCustomer=new RetailCustomer(1,"Arifa", new Loan(100, 5000) {
-            @Override
-            double getCommission() {
-                return 0;
-            }
-        });
+        CorpLoan corpLoan=new CorpLoan(310,5000);
+        CorpCustomer corpCustomer=new CorpCustomer(2,"Hasan",corpLoan);
 
-        CorpCustomer corpCustomer=new CorpCustomer(2, "Hasan", new Loan(200,10000) {
-            @Override
-            double getCommission() {
-                return 0;
-            }
-        });
+        System.out.println("New commission amount for RETAIL customer is --->"+retailCustomer.getCommissionAmount());
+        System.out.println("New commission amount for CORPORATE customer is --->"+corpCustomer.getCommissionAmount());
 
-        System.out.println("New commission is --->"+retailCustomer.getCommissionAmount());
-
-        System.out.println();
               }
 
 

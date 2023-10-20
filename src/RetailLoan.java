@@ -9,6 +9,7 @@ public class RetailLoan extends  Loan{
     }
 
 
+    @Override
     double getCommission(){
         return 5;
     };
